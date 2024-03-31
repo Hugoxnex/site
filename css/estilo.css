@@ -1,0 +1,111 @@
+/* Define as propriedades padrão para todos os elementos */
+* {
+    box-sizing: border-box; /* Inclui preenchimento e borda no cálculo do tamanho do elemento */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+/* Estilos para o corpo (body) */
+body {
+    font-family: Arial, sans-serif; /* Escolha a fonte desejada */
+    background-color: #A6782A; /* Define a cor de fundo do corpo */
+}
+
+/* Estilos para o cabeçalho (header) */
+.topo {
+    background-color: #A6782A; /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex; /* Aplica o modelo de layout flexível */
+    justify-content: space-between; /* Alinha os itens no cabeçalho */
+    align-items: center; /* Alinha verticalmente os itens no cabeçalho */
+}
+
+/* Estilos para as imagens dentro do cabeçalho */
+.topo img {
+    padding: 0; /* Remove o preenchimento das imagens */
+}
+
+/* Estilos para a navegação (nav) */
+nav {
+    background-color: #A6782A; /* Define a cor de fundo da navegação */
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilos para os links de navegação */
+nav a {
+    color: white; /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove a decoração de texto */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estilos para os links de navegação quando o mouse passa sobre eles */
+nav a:hover {
+    background-color: #874F1D; /* Define a cor de fundo ao passar o mouse */
+}
+
+/* Estilos para a primeira coluna (coluna1) */
+.coluna1 {
+    background-color: #b9763a; /* Define a cor de fundo da coluna1 */
+    text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+/* Estilos para o título na primeira coluna */
+.coluna1 h1 {
+    color: #fffdfd; /* Define a cor do texto */
+}
+
+/* Estilos para o parágrafo na primeira coluna */
+.coluna1 p {
+    color: #fffbfb; /* Define a cor do texto */
+    font-size: 20px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para a segunda coluna (coluna2) */
+.coluna2 {
+    background-color: #A6782A; /* Define a cor de fundo da coluna2 */
+    float: left; /* Flutua a coluna para a esquerda */
+    width: 50%; /* Define a largura da coluna */
+    padding: 15px; /* Adiciona espaçamento interno */
+}
+
+/* Estilos para o título na segunda coluna */
+.coluna2 h2 {
+    color: #fffbfb; /* Define a cor do texto */
+    font-size: 30px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o parágrafo na segunda coluna */
+.coluna2 p {
+    color: #fffbfb; /* Define a cor do texto */
+    font-size: 20px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o banner */
+.banner {
+    display: flex; /* Aplica o modelo de layout flexível */
+    justify-content: space-between; /* Alinha os itens do banner */
+    padding: 20px; /* Adiciona espaçamento interno */
+    overflow: hidden; /* Oculta o conteúdo que estiver fora do banner */
+}
+
+/* Estilos para as imagens dentro do banner */
+.banner img {
+    width: 33%; /* Define a largura das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco em torno das imagens */
+    transition: transform 1s ease; /* Adiciona uma transição suave */
+}
+
+/* Estilos para o rodapé (footer) */
+footer {
+    background-color: #333; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto */
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+    position: fixed; /* Fixa o rodapé na parte inferior da janela de visualização */
+    bottom: 0; /* Define a distância do rodapé ao fundo da janela */
+    width: 100%; /* Define a largura do rodapé */
+}
+
+/*

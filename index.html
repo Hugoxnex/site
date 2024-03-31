@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copio Ifood</title>
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Importa o arquivo de estilo externo -->
+</head>
+<body>
+    <header class="topo">
+        <!-- Logos da empresa -->
+        <img src="img/Logo 2.gif" width="215" height="112">  
+        <img src="img/Logo de Hamburgueria Artesanal.gif" width="215" height="112">  
+        <img src="img/Logo 2.gif" width="214" height="112">     
+    </header>
+   
+    <nav>
+        <!-- Links de navegação -->
+        <a href="index.html">Home</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="formulario.html">Formulário</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <hr> <!-- Linha horizontal para separar as seções -->
+
+    <section class="coluna1">
+        <!-- Título e descrição da Hamburgueria -->
+        <h1>Nois da Hamburgueria HUGO SANTOS</h1>
+        <br>
+        <p><b>Tenhos Lanches *  Hot-Dog * Sucos</b></p> <!-- Descrição em negrito -->
+    </section>
+
+    <section class="coluna2">
+        <!-- Título e descrição das Promoções Especiais -->
+        <h2>Promoções Especiais:</h2>
+        <p>
+            Oferta da Semana: Desfrute do nosso combo especial esta semana! Um hambúrguer gourmet acompanhado de batatas fritas crocantes e um refrigerante por apenas R$ 20,00! <br>
+            Happy Hour: De segunda a sexta-feira, das 17h às 19h, aproveite nossos hambúrgueres selecionados com 20% de desconto! Traga seus amigos e desfrute de uma noite deliciosa conosco. <br>
+            Novo no Cardápio: Experimente o nosso hambúrguer exclusivo "Double Cheese Bacon"! Duas suculentas carnes, queijo derretido e bacon crocante em um pão macio. Por tempo limitado, apenas R$ 15,00! 
+        </p>
+    </section>
+
+    <section class="coluna2">
+        <!-- Título e descrição do Menu Destacado -->
+        <h2>Menu Destacado:</h2>
+        <p>
+            Hambúrguer Clássico: Nosso "Hambúrguer Clássico" é um verdadeiro favorito entre os clientes. Carne suculenta, queijo cheddar derretido, alface fresca, tomate e molho especial, tudo em um pão de brioche macio. <br>
+            Hambúrguer Vegetariano: Para os amantes de vegetais, recomendamos nosso "Hambúrguer Vegetariano". Uma deliciosa combinação de hambúrguer de grão-de-bico, abacate cremoso, rúcula fresca e maionese de ervas, servido em um pão integral. <br>
+            Combo Familiar: Compartilhe momentos deliciosos com nossa "Combo Familiar". Dois hambúrgueres à sua escolha, acompanhados de batatas fritas e refrigerantes, tudo por apenas R$ 40,00!
+        </p>
+    </section>
+
+    <section class="banner">
+        <!-- Banner com imagens rotativas -->
+        <img src="img/hambúrguer.gif" alt="Banner 1">
+        <img src="img/hambúrguer (1).gif" alt="Banner 2">
+        <img src="img/hambúrguer (3).gif" alt="Banner 3">
+    </section>
+    
+    <footer>
+        <!-- Texto de direitos autorais -->
+        <p>© 2024. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para alternar automaticamente entre os gifs -->
+    <script>
+        const banner = document.querySelector('.banner');
+        let isSecondImage = false;
+
+        setInterval(() => {
+            if (isSecondImage) {
+                banner.style.transform = 'translateX(0)';
+            } else {
+                banner.style.transform = 'translateX(-100%)';
+            }
+            isSecondImage = !isSecondImage;
+        }, 2000); // Altera a cada 2 segundos (2000 milissegundos)
+    </script>
+</body>
+</html>
+

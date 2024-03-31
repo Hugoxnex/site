@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copio Ifood</title>
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Importa o arquivo de estilo externo -->
+</head>
+<body>
+    <header class="topo">
+        <!-- Logos da empresa -->
+        <img src="img/Logo 2.gif" width="215" height="112">  
+        <img src="img/Logo de Hamburgueria Artesanal.gif" width="215" height="112">  
+        <img src="img/Logo 2.gif" width="214" height="112">     
+    </header>
+   
+    <nav>
+        <!-- Links de navegação -->
+        <a href="index.html">Home</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="formulario.html">Formulário</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <hr> <!-- Linha horizontal para separar as seções -->
+
+    
+    
+    <footer>
+        <!-- Texto de direitos autorais -->
+        <p>© 2024. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para alternar automaticamente entre os gifs -->
+    <script>
+               setInterval(() => {
+            if (isSecondImage) {
+                banner.style.transform = 'translateX(0)';
+            } else {
+                banner.style.transform = 'translateX(-100%)';
+            }
+            isSecondImage = !isSecondImage;
+        }, 2000); // Altera a cada 2 segundos (2000 milissegundos)
+    </script>
+</body>
+</html>
+
